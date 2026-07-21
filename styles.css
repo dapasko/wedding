@@ -323,7 +323,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero-scroll {
     position: absolute;
-    bottom: 25px;
+    bottom: 15px;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
@@ -1536,7 +1536,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .hero-scroll {
-        bottom: 15px;
+        bottom: 10px;
     }
     
     .scroll-arrow {
