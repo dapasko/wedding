@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Свадьба Даниила и Ирины | 19 сентября 2026</title>
+    <meta name="description" content="Приглашение на свадьбу Даниила и Ирины 19 сентября 2026">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Яндекс.Карты API -->
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш_api_key&lang=ru_RU" type="text/javascript"></script>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">Д & И</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Главная</a></li>
+                <li><a href="#story" class="nav-link">История</a></li>
+                <li><a href="#gallery" class="nav-link">Галерея</a></li>
+                <li><a href="#details" class="nav-link">ЗАГС</a></li>
+                <li><a href="#venue" class="nav-link">Ресторан</a></li>
+                <li><a href="#program" class="nav-link">Программа</a></li>
+                <li><a href="#dresscode" class="nav-link">Гостям</a></li>
+                <li><a href="#faq" class="nav-link">FAQ</a></li>
+                <li><a href="#rsvp" class="nav-link nav-btn">RSVP</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background" style="background-image: url('https://images.unsplash.com/photo-1519741497674-611481863552?w=1920&q=80')"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-pretitle">Приглашение на свадьбу</p>
+            <h1 class="hero-title">Даниил <span class="ampersand">&</span> Ирина</h1>
+            <p class="hero-date">19 сентября 2026</p>
+
+            <!-- Таймер -->
+            <div class="countdown" id="countdown">
+                <div class="countdown-item">
+                    <span class="countdown-number" id="days">00</span>
+                    <span class="countdown-label">дней</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="hours">00</span>
+                    <span class="countdown-label">часов</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="minutes">00</span>
+                    <span class="countdown-label">минут</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="seconds">00</span>
+                    <span class="countdown-label">секунд</span>
+                </div>
+            </div>
+
+            <div class="hero-scroll">
+                <div class="scroll-indicator">
+                    <span class="scroll-text">Листайте вниз</span>
+                    <div class="scroll-arrow">↓</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Музыкальный контрол -->
+        <button class="music-control" id="musicControl" aria-label="Музыка">
+            <svg class="music-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+            </svg>
+            <span class="music-text">Музыка</span>
+        </button>
+        
+        <!-- Кнопка связи (для мобильных) -->
+        <a href="tel:+79990000000" class="contact-btn-mobile" id="contactBtn" aria-label="Позвонить">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
+            </svg>
+        </a>
+    </section>
+
+    <!-- Story Section -->
+    <section class="story" id="story">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">Как всё начиналось</p>
+                <h2 class="section-title">Наша История</h2>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="story-content">
+                <div class="story-text">
+                    <p class="story-intro">Дорогие друзья и родные!</p>
+                    <p>Мы счастливы пригласить вас на наше свадебное торжество. Ваша поддержка и любовь сопровождали нас на протяжении всего нашего пути, и мы не представляем этот особенный день без вас.</p>
+                    <p>В этот день мы хотим разделить с вами нашу радость, создать незабываемые воспоминания и начать новую главу нашей жизни вместе с самыми близкими людьми.</p>
+                </div>
+                
+                <!-- Timeline отношений -->
+                <div class="relationship-timeline">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Сентябрь 2023</div>
+                        <div class="timeline-title">❤️ Первая встреча</div>
+                        <div class="timeline-desc">Именно в этот день началась наша история.</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Октябрь 2023</div>
+                        <div class="timeline-title">🌹 Первое свидание</div>
+                        <div class="timeline-desc">Мы поняли, что хотим узнавать друг друга всё больше.</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Ноябрь 2024</div>
+                        <div class="timeline-title">🏡 Начали жить вместе</div>
+                        <div class="timeline-desc">Мы начали новый этап нашей истории — совместную жизнь, наполненную любовью, заботой и общими мечтами.</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Декабрь 2025</div>
+                        <div class="timeline-title">💍 Предложение руки и сердца</div>
+                        <div class="timeline-desc">Тот самый долгожданный момент, когда прозвучало заветное «Да!».</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Сентябрь 2026</div>
+                        <div class="timeline-title">🤍 День нашей свадьбы</div>
+                        <div class="timeline-desc">Начало новой главы нашей жизни — уже в статусе семьи.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">Моменты счастья</p>
+                <h2 class="section-title">Фотогалерея</h2>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="1.jpg" alt="Фото пары 1" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Вместе</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="2.jpg" alt="Фото пары 2" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Любовь</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="3.jpg" alt="Фото пары 3" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Счастье</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="4.jpg" alt="Фото пары 4" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Моменты</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="5.jpg" alt="Фото пары 5" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Нежность</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="6.jpg" alt="Фото пары 6" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Предложение</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="7.jpg" alt="Фото пары 7" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Прогулки</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="8.jpg" alt="Фото пары 8" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Романтика</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="9.jpg" alt="Фото пары 9" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Мы</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Details Section -->
+    <section class="details" id="details">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">Важная информация</p>
+                <h2 class="section-title">Детали Свадьбы</h2>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="details-grid">
+                <div class="detail-card">
+                    <div class="detail-icon">📅</div>
+                    <h3>Дата</h3>
+                    <p class="detail-value">19 сентября 2026</p>
+                    <p class="detail-sub">Суббота</p>
+                </div>
+                <div class="detail-card">
+                    <div class="detail-icon">⏰</div>
+                    <h3>Время</h3>
+                    <p class="detail-value">14:50</p>
+                    <p class="detail-sub">Регистрация в ЗАГСе</p>
+                </div>
+                <div class="detail-card">
+                    <div class="detail-icon">📍</div>
+                    <h3>Место</h3>
+                    <p class="detail-value">ЗАГС Ленинского района</p>
+                    <p class="detail-sub">ул. Ленина, 251, Ставрополь</p>
+                </div>
+            </div>
+            
+            <!-- Карта -->
+            <div class="map-container">
+                <div id="map"></div>
+                <a href="https://yandex.ru/maps/-/CTVhN81Y" target="_blank" class="map-link">
+                    <span>🗺️</span> Открыть в Яндекс.Картах
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Venue Section (Ресторан) -->
+    <section class="venue" id="venue">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">Продолжение праздника</p>
+                <h2 class="section-title">Ресторан</h2>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="venue-content">
+                <div class="venue-info">
+                    <h3>🍽️ Название ресторана</h3>
+                    <p class="venue-address">📍 Адрес: будет указан позже</p>
+                    <p class="venue-time">⏰ Начало: 16:00</p>
+                    <p class="venue-desc">
+                        После регистрации в ЗАГСе приглашаем вас на праздничный банкет!
+                        Нас ждут вкусные блюда, напитки, музыка и веселье до позднего вечера.
+                    </p>
+                    <div class="venue-features">
+                        <div class="venue-feature">
+                            <span class="feature-icon">🍷</span>
+                            <span>Вкусные блюда и напитки</span>
+                        </div>
+                        <div class="venue-feature">
+                            <span class="feature-icon">🎵</span>
+                            <span>Музыка и танцы</span>
+                        </div>
+                        <div class="venue-feature">
+                            <span class="feature-icon">🎉</span>
+                            <span>Веселье до ночи</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="venue-map">
+                    <div id="venueMap"></div>
+                    <a href="https://yandex.ru/maps" target="_blank" class="map-link">
+                        <span>🗺️</span> Открыть в Яндекс.Картах
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Section -->
+    <section class="program" id="program">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">План мероприятия</p>
+                <h2 class="section-title">Программа Дня</h2>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item-wrapper">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-time">14:30</div>
+                        <h3>🥂 Сбор гостей</h3>
+                        <p>Приветственный фуршет, знакомство гостей, фотосессия</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item-wrapper">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-time">14:50</div>
+                        <h3>💍 Регистрация в ЗАГСе</h3>
+                        <p>Торжественная регистрация брака, обмен кольцами</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item-wrapper">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-time">16:00</div>
+                        <h3>🍽️ Банкет</h3>
+                        <p>Праздничный ужин, тосты, поздравления</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item-wrapper">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-time">18:00</div>
+                        <h3>🎉 Развлекательная программа</h3>
+                        <p>Танцы, конкурсы, первый танец молодожёнов</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item-wrapper">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-time">20:00</div>
+                        <h3>🎂 Свадебный торт</h3>
+                        <p>Сладкий финал вечера, разрезание торта</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item-wrapper">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-time">21:00</div>
+                        <h3>✨ Завершение</h3>
+                        <p>Финальные фотографии, прощание с гостями</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dress Code Section -->
+    <section class="dresscode" id="dresscode">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">Пожелания гостям</p>
+                <h2 class="section-title">Дресс-код и Важное</h2>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="dresscode-grid">
+                <div class="dresscode-card">
+                    <div class="dresscode-icon">👔</div>
+                    <h3>Дресс-код</h3>
+                    <p>Будем благодарны, если вы поддержите цветовую гамму нашей свадьбы в своих нарядах:</p>
+                    <div class="color-palette">
+                        <div class="color-swatch" style="background: #d4a574;" title="Золотой"></div>
+                        <div class="color-swatch" style="background: #e8d5b5;" title="Бежевый"></div>
+                        <div class="color-swatch" style="background: #b8935f;" title="Бронзовый"></div>
+                        <div class="color-swatch" style="background: #f5e6d3;" title="Кремовый"></div>
+                        <div class="color-swatch" style="background: #2c2c2c;" title="Тёмно-серый"></div>
+                    </div>
+                </div>
+
+                <div class="dresscode-card">
+                    <div class="dresscode-icon">🎁</div>
+                    <h3>Подарки</h3>
+                    <p>Главный подарок — ваше присутствие! Но если вы хотите сделать материальный подарок, мы будем рады вкладу в наш семейный бюджет или путешествие.</p>
+                </div>
+
+                <div class="dresscode-card">
+                    <div class="dresscode-icon">📸</div>
+                    <h3>Фотографии</h3>
+                    <p>Делитесь фото с хештегом <strong>#ДаниилИрина2026</strong>. Профессиональный фотограф будет работать весь вечер.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">Ответы на вопросы</p>
+                <h2 class="section-title">Частые Вопросы</h2>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Нужно ли подтверждать присутствие?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Да, пожалуйста, заполните форму RSVP до 1 сентября 2026. Это поможет нам точно рассчитать количество гостей.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Можно ли прийти с парой?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>В приглашении указано, кто именно приглашён. Если вы хотите взять с собой пару, пожалуйста, обсудите это с нами заранее.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Будет ли трансфер?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Да, мы организуем трансфер от центра города. Детали будут отправлены подтверждённым гостям.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Что если я не смогу прийти?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Мы будем скучать! Пожалуйста, всё равно заполните RSVP, чтобы мы знали. Главное — ваше тепло в этот день, независимо от расстояния.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Можно ли фотографировать?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Конечно! Мы будем рады вашим фотографиям. Используйте хештег #ДаниилИрина2026 и отмечайте нас.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RSVP Section -->
+    <section class="rsvp" id="rsvp">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">До 1 сентября 2026</p>
+                <h2 class="section-title">Подтверждение Присутствия</h2>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="rsvp-content">
+                <p class="rsvp-intro">Пожалуйста, заполните форму ниже, чтобы подтвердить ваше присутствие на нашем празднике</p>
+                
+                <form class="rsvp-form" id="rsvpForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Ваше имя и фамилия *</label>
+                            <input type="text" id="name" name="name" placeholder="Иван Иванов" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="attendance">Сможете ли вы присутствовать? *</label>
+                            <select id="attendance" name="attendance" required>
+                                <option value="" disabled selected>Выберите вариант</option>
+                                <option value="yes">🎉 С радостью приду</option>
+                                <option value="no">😔 К сожалению, не смогу</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Номер телефона *</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email (для связи)</label>
+                            <input type="email" id="email" name="email" placeholder="example@mail.ru">
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="guests">Количество гостей</label>
+                            <select id="guests" name="guests">
+                                <option value="1">Только я</option>
+                                <option value="2">Я + 1</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="message">Пожелания, вопросы или особые требования</label>
+                            <textarea id="message" name="message" placeholder="Аллергии, предпочтения в еде, вопросы..." rows="4"></textarea>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">
+                        <span>✨</span> Отправить подтверждение
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-names">Даниил <span class="ampersand">&</span> Ирина</p>
+                <p class="footer-date">19 сентября 2026</p>
+                <p class="footer-hashtag">#ДаниилИрина2026</p>
+                <p class="footer-love">С любовью и благодарностью</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Audio Element -->
+    <audio id="weddingMusic" loop preload="metadata">
+        <source src="https://cdn.pixabay.com/download/audio/2022/10/18/audio_31c2f7e3f2.mp3?filename=romantic-piano-123947.mp3" type="audio/mpeg">
+        Ваш браузер не поддерживает аудио.
+    </audio>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
