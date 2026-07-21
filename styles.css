@@ -322,13 +322,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-scroll {
-    position: fixed;
-    bottom: 15px;
+    position: absolute;
+    bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
     animation: bounce 2s infinite;
-    z-index: 100;
+    z-index: 10;
 }
 
 .scroll-indicator {
@@ -1537,7 +1537,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .hero-scroll {
-        bottom: 10px;
+        bottom: 20px;
     }
     
     .scroll-arrow {
