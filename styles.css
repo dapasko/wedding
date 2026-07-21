@@ -449,42 +449,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ===================================
-   Welcome Section
+   Story Section
    =================================== */
-.welcome {
-    padding: 100px 0;
-    background: linear-gradient(135deg, #f9f5f0 0%, #fff 100%);
-    text-align: center;
-}
-
-.welcome-title {
-    font-family: var(--font-heading);
-    font-size: 2.5rem;
-    color: var(--text-color);
-    margin-bottom: 30px;
-}
-
-.welcome-divider {
-    width: 80px;
-    height: 3px;
-    background: var(--primary-color);
-    margin: 0 auto 40px;
-}
-
-.welcome-text {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: #555;
-    max-width: 800px;
-    margin: 0 auto 25px;
-}
-
-/* RSVP Deadline */
-.rsvp-deadline {
-    font-size: 1rem;
-    color: var(--primary-color);
-    margin-bottom: 30px;
-    font-weight: 500;
+.story {
+    padding: 120px 0;
+    background: var(--bg-cream);
 }
 
 /* Dresscode List */
@@ -523,14 +492,6 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.9rem;
     color: #666;
     font-style: italic;
-}
-
-/* ===================================
-   Story Section
-   =================================== */
-.story {
-    padding: 120px 0;
-    background: var(--bg-cream);
 }
 
 .story-content {
