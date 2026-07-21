@@ -281,8 +281,16 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.8rem;
     font-weight: 300;
     color: var(--primary-light);
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     letter-spacing: 2px;
+}
+
+.hero-invitation {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: rgba(255,255,255,0.95);
+    margin-bottom: 40px;
+    font-weight: 300;
 }
 
 /* Countdown */
@@ -438,6 +446,83 @@ h1, h2, h3, h4, h5, h6 {
 .contact-btn-mobile:hover {
     background: var(--primary-dark);
     transform: scale(1.1);
+}
+
+/* ===================================
+   Welcome Section
+   =================================== */
+.welcome {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #f9f5f0 0%, #fff 100%);
+    text-align: center;
+}
+
+.welcome-title {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    color: var(--text-color);
+    margin-bottom: 30px;
+}
+
+.welcome-divider {
+    width: 80px;
+    height: 3px;
+    background: var(--primary-color);
+    margin: 0 auto 40px;
+}
+
+.welcome-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 25px;
+}
+
+/* RSVP Deadline */
+.rsvp-deadline {
+    font-size: 1rem;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+/* Dresscode List */
+.dresscode-list {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+    text-align: left;
+}
+
+.dresscode-list li {
+    padding: 8px 0;
+    padding-left: 25px;
+    position: relative;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.dresscode-list li::before {
+    content: "•";
+    color: var(--primary-color);
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+
+.dresscode-note {
+    margin-top: 15px;
+    padding: 12px;
+    background: rgba(212, 165, 116, 0.1);
+    border-left: 3px solid var(--primary-color);
+    border-radius: 4px;
+    font-size: 0.9rem;
+    color: #666;
+    font-style: italic;
 }
 
 /* ===================================

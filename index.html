@@ -47,7 +47,8 @@
         <div class="hero-content">
             <p class="hero-pretitle">Приглашение на свадьбу</p>
             <h1 class="hero-title">Даниил <span class="ampersand">&</span> Ирина</h1>
-            <p class="hero-date">19 сентября 2026</p>
+            <p class="hero-date">19 сентября 2026 в 14:50</p>
+            <p class="hero-invitation">Приглашаем вас разделить с нами этот особенный день!</p>
 
             <!-- Таймер -->
             <div class="countdown" id="countdown">
@@ -92,6 +93,26 @@
                 <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
             </svg>
         </a>
+    </section>
+
+    <!-- Welcome Section -->
+    <section class="welcome" id="welcome">
+        <div class="container">
+            <div class="welcome-content">
+                <h2 class="welcome-title">Дорогие родные и друзья!</h2>
+                <div class="welcome-divider"></div>
+                <p class="welcome-text">
+                    В нашей жизни наступает важный момент — мы создаем семью. 
+                    Мы будем счастливы видеть вас на нашей свадьбе!
+                </p>
+                <p class="welcome-text">
+                    Ваша поддержка и любовь сопровождали нас на протяжении всего нашего пути, 
+                    и мы не представляем этот особенный день без вас. Мы хотим разделить с вами 
+                    нашу радость, создать незабываемые воспоминания и начать новую главу нашей 
+                    жизни вместе с самыми близкими людьми.
+                </p>
+            </div>
+        </div>
     </section>
 
     <!-- Story Section -->
@@ -339,26 +360,35 @@
                 <div class="dresscode-card">
                     <div class="dresscode-icon">👔</div>
                     <h3>Дресс-код</h3>
-                    <p>Будем благодарны, если вы поддержите цветовую гамму нашей свадьбы в своих нарядах:</p>
-                    <div class="color-palette">
-                        <div class="color-swatch" style="background: #d4a574;" title="Золотой"></div>
-                        <div class="color-swatch" style="background: #e8d5b5;" title="Бежевый"></div>
-                        <div class="color-swatch" style="background: #b8935f;" title="Бронзовый"></div>
-                        <div class="color-swatch" style="background: #f5e6d3;" title="Кремовый"></div>
-                        <div class="color-swatch" style="background: #2c2c2c;" title="Тёмно-серый"></div>
-                    </div>
+                    <p>Будем благодарны, если вы поддержите стиль <strong>Smart Casual</strong> в своих нарядах:</p>
+                    <ul class="dresscode-list">
+                        <li>Для девушек: коктейльные или вечерние платья, элегантные брючные комплекты</li>
+                        <li>Для мужчин: брюки с рубашкой, пиджак или костюм</li>
+                    </ul>
+                    <p class="dresscode-note">👠 Девушки, пожалуйста, выбирайте обувь на устойчивом каблуке или элегантные туфли — часть мероприятия может пройти на открытом воздухе.</p>
                 </div>
 
                 <div class="dresscode-card">
                     <div class="dresscode-icon">🎁</div>
                     <h3>Подарки</h3>
-                    <p>Главный подарок — ваше присутствие! Но если вы хотите сделать материальный подарок, мы будем рады вкладу в наш семейный бюджет или путешествие.</p>
+                    <p>Главный подарок — ваше присутствие! Но если вы хотите сделать материальный подарок:</p>
+                    <ul class="dresscode-list">
+                        <li>💌 Мы будем рады вкладу в наш семейный бюджет в конверте</li>
+                        <li>🍷 Или бутылке вашего любимого вина для нашей семейной винотеки</li>
+                        <li>📚 Также примем с благодарностью книгу или настольную игру</li>
+                    </ul>
+                    <p class="dresscode-note">🙏 Пожалуйста, не дарите живые цветы — они завянут, а нам хочется долгих воспоминаний!</p>
                 </div>
 
                 <div class="dresscode-card">
-                    <div class="dresscode-icon">📸</div>
-                    <h3>Фотографии</h3>
-                    <p>Делитесь фото с хештегом <strong>#ДаниилИрина2026</strong>. Профессиональный фотограф будет работать весь вечер.</p>
+                    <div class="dresscode-icon">👨‍👩‍👧‍👦</div>
+                    <h3>Дети и гости</h3>
+                    <p>Мы любим детей и рады видеть их на нашей свадьбе!</p>
+                    <ul class="dresscode-list">
+                        <li>Пожалуйста, сообщите нам заранее, если будете с детьми</li>
+                        <li>Мы подготовим детское меню и небольшие сюрпризы</li>
+                    </ul>
+                    <p class="dresscode-note">Если планируете прийти с парой, пожалуйста, согласуйте это с нами заранее.</p>
                 </div>
             </div>
         </div>
@@ -380,47 +410,67 @@
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>Да, пожалуйста, заполните форму RSVP до 1 сентября 2026. Это поможет нам точно рассчитать количество гостей.</p>
+                        <p>Да, пожалуйста, заполните форму RSVP до <strong>1 сентября 2026</strong>. Это поможет нам точно рассчитать количество гостей и передать информацию ресторану.</p>
                     </div>
                 </div>
-                
+
                 <div class="faq-item">
                     <button class="faq-question">
                         <span>Можно ли прийти с парой?</span>
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>В приглашении указано, кто именно приглашён. Если вы хотите взять с собой пару, пожалуйста, обсудите это с нами заранее.</p>
+                        <p>В приглашении указано, кто именно приглашён. Если вы хотите взять с собой пару, пожалуйста, согласуйте это с нами заранее и укажите это в форме RSVP.</p>
                     </div>
                 </div>
-                
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Можно ли прийти с детьми?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Да, мы любим детей и рады видеть их на нашей свадьбе! Пожалуйста, сообщите нам заранее, если будете с детьми — мы подготовим детское меню и небольшие сюрпризы.</p>
+                    </div>
+                </div>
+
                 <div class="faq-item">
                     <button class="faq-question">
                         <span>Будет ли трансфер?</span>
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>Да, мы организуем трансфер от центра города. Детали будут отправлены подтверждённым гостям.</p>
+                        <p>Трансфер не организуется. Гости добираются до места самостоятельно. На территории ресторана есть бесплатная парковка для автомобилей.</p>
                     </div>
                 </div>
-                
+
                 <div class="faq-item">
                     <button class="faq-question">
-                        <span>Что если я не смогу прийти?</span>
+                        <span>Что дарить молодожёнам?</span>
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>Мы будем скучать! Пожалуйста, всё равно заполните RSVP, чтобы мы знали. Главное — ваше тепло в этот день, независимо от расстояния.</p>
+                        <p>Главный подарок — ваше присутствие! Но если вы хотите сделать материальный подарок, мы будем рады вкладу в семейный бюджет в конверте, бутылке вина для нашей винотеки, книге или настольной игре. Пожалуйста, не дарите живые цветы.</p>
                     </div>
                 </div>
-                
+
                 <div class="faq-item">
                     <button class="faq-question">
                         <span>Можно ли фотографировать?</span>
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>Конечно! Мы будем рады вашим фотографиям. Используйте хештег #ДаниилИрина2026 и отмечайте нас.</p>
+                        <p>Конечно! Мы будем рады вашим фотографиям. Используйте хештег <strong>#ДаниилИрина2026</strong> и отмечайте нас. Профессиональный фотограф будет работать весь вечер.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>К кому обращаться по вопросам?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Если вы заблудились или у вас возникли вопросы в день свадьбы, пожалуйста, звоните нашему координатору по телефону <strong>+7 (___) ___-__-__</strong>. Самих молодожёнов в этот день лучше не беспокоить.</p>
                     </div>
                 </div>
             </div>
@@ -438,7 +488,8 @@
             
             <div class="rsvp-content">
                 <p class="rsvp-intro">Пожалуйста, заполните форму ниже, чтобы подтвердить ваше присутствие на нашем празднике</p>
-                
+                <p class="rsvp-deadline">📅 Пожалуйста, ответьте до 1 сентября 2026</p>
+
                 <form class="rsvp-form" id="rsvpForm">
                     <div class="form-row">
                         <div class="form-group">
@@ -446,49 +497,70 @@
                             <input type="text" id="name" name="name" placeholder="Иван Иванов" required>
                         </div>
                     </div>
-                    
+
                     <div class="form-row">
                         <div class="form-group">
                             <label for="attendance">Сможете ли вы присутствовать? *</label>
                             <select id="attendance" name="attendance" required>
                                 <option value="" disabled selected>Выберите вариант</option>
-                                <option value="yes">🎉 С радостью приду</option>
+                                <option value="yes">🎉 Да, с удовольствием</option>
                                 <option value="no">😔 К сожалению, не смогу</option>
                             </select>
                         </div>
                     </div>
-                    
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="phone">Номер телефона *</label>
-                            <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
-                        </div>
-                    </div>
-                    
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="email">Email (для связи)</label>
-                            <input type="email" id="email" name="email" placeholder="example@mail.ru">
-                        </div>
-                    </div>
-                    
+
                     <div class="form-row">
                         <div class="form-group">
                             <label for="guests">Количество гостей</label>
                             <select id="guests" name="guests">
                                 <option value="1">Только я</option>
                                 <option value="2">Я + 1</option>
+                                <option value="3">Я + 2</option>
                             </select>
                         </div>
                     </div>
-                    
+
                     <div class="form-row">
                         <div class="form-group">
-                            <label for="message">Пожелания, вопросы или особые требования</label>
-                            <textarea id="message" name="message" placeholder="Аллергии, предпочтения в еде, вопросы..." rows="4"></textarea>
+                            <label for="alcohol">Предпочтения по алкоголю</label>
+                            <select id="alcohol" name="alcohol">
+                                <option value="" disabled selected>Выберите вариант</option>
+                                <option value="red">🍷 Красное вино</option>
+                                <option value="white">🥂 Белое вино</option>
+                                <option value="strong">🥃 Крепкие напитки</option>
+                                <option value="none">🚫 Не пью алкоголь</option>
+                            </select>
                         </div>
                     </div>
-                    
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Номер телефона *</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email (для связи)</label>
+                            <input type="email" id="email" name="email" placeholder="example@mail.ru">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="food">Особенности по еде</label>
+                            <textarea id="food" name="food" placeholder="Аллергии, вегетарианец, ем всё..." rows="3"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="message">Пожелания или вопросы</label>
+                            <textarea id="message" name="message" placeholder="Ваши вопросы или пожелания..." rows="3"></textarea>
+                        </div>
+                    </div>
+
                     <button type="submit" class="submit-btn">
                         <span>✨</span> Отправить подтверждение
                     </button>
