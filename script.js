@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', function() {
     initMobileMenu();
     initSmoothScroll();
     initMusicPlayer();
-    initRSVPForm();
     initFAQ();
     initScrollAnimations();
     initMap();
@@ -187,64 +186,6 @@ function initMusicPlayer() {
 }
 
 // ===================================
-// RSVP Форма
-// ===================================
-function initRSVPForm() {
-    const form = document.getElementById('rsvpForm');
-    if (!form) return;
-    
-    form.addEventListener('submit', async function(e) {
-        e.preventDefault();
-        
-        const submitBtn = form.querySelector('.submit-btn');
-        const formData = new FormData(form);
-        
-        // Валидация
-        const name = formData.get('name')?.trim();
-        const attendance = formData.get('attendance');
-        const phone = formData.get('phone')?.trim();
-        
-        if (!name || !attendance || !phone) {
-            showNotification('Пожалуйста, заполните все обязательные поля', 'error');
-            return;
-        }
-        
-        // Показываем состояние загрузки
-        submitBtn.classList.add('loading');
-        submitBtn.disabled = true;
-        
-        // Собираем данные
-        const data = {
-            name: name,
-            attendance: attendance,
-            phone: phone,
-            email: formData.get('email')?.trim() || '',
-            guests: formData.get('guests') || '1',
-            message: formData.get('message')?.trim() || ''
-        };
-        
-        console.log('RSVP данные:', data);
-        
-        // Имитация отправки (замените на реальный API)
-        try {
-            await new Promise(resolve => setTimeout(resolve, 1500));
-            
-            // Здесь можно добавить реальную отправку
-            // await sendToTelegram(data);
-            
-            showNotification('Спасибо! Ваше подтверждение отправлено 🎉', 'success');
-            form.reset();
-        } catch (error) {
-            console.error('Ошибка отправки:', error);
-            showNotification('Ошибка при отправке. Пожалуйста, свяжитесь с нами напрямую', 'error');
-        } finally {
-            submitBtn.classList.remove('loading');
-            submitBtn.disabled = false;
-        }
-    });
-}
-
-// ===================================
 // Маска для телефона
 // ===================================
 function initPhoneMask() {
@@ -301,7 +242,7 @@ function initFAQ() {
 // ===================================
 function initScrollAnimations() {
     // Анимация секций
-    const sections = document.querySelectorAll('.story, .gallery, .details, .program, .dresscode, .faq, .rsvp');
+    const sections = document.querySelectorAll('.story, .gallery, .details, .program, .dresscode, .faq');
     
     const sectionObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
